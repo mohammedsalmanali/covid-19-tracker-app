@@ -1,0 +1,12 @@
+<form *ngIf="overAllData.confirmed.value">
+    <mat-form-field appearance="fill" [ngClass]="{'light': !darkTheme}">
+        <mat-label *ngIf="selectedCountry!='Global'">Country</mat-label>
+        <mat-select [(ngModel)]="selectedCountry" name="country" [(value)]="selectedCountry">
+            <mat-option *ngFor="let country of countryView" [value]="country.value" (click)="sendMessage(selectedCountry)">
+                {{country.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <p *ngIf="selectedCountry!='Global'" class="selected-country" [ngClass]="{'dark': darkTheme}"> {{selectedCountry}} </p>
+</form>
+  

@@ -1,0 +1,17 @@
+canvas {
+    padding: 5%;
+}
+
+@media (max-width:520px) {
+    canvas {
+        width: 370px !important;
+        height: 200px !important;
+    }
+}
+
+@media (min-width:520px) {
+    canvas {
+        width: 700px !important;
+        height: 400px !important;
+    }
+}

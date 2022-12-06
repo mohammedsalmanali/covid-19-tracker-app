@@ -1,0 +1,43 @@
+.selected-country {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+mat-form-field {
+    margin-top: 25px;
+}
+
+::ng-deep .mat-option.mat-active {
+    color: #a25dd6 !important;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+}
+
+::ng-deep .mat-form-field-underline {
+    bottom: 0 !important;
+}
+
+.light {
+    background: #dcdcdc !important;
+    transition: all 0.5s linear 0s;
+    
+    ::ng-deep .mat-form-field {
+        margin-top: 25px;
+    }
+
+    ::ng-deep .mat-select-value, ::ng-deep .mat-select-arrow, ::ng-deep .mat-option, ::ng-deep.mat-form-field-label {
+        color: black;
+        transition: all 0.5s linear 0s;
+    }
+}
+
+.dark {
+    color: #dcdcdc;
+}

@@ -1,0 +1,28 @@
+<div class="card-container" *ngIf="overAllData.confirmed.value">
+    <mat-card class="confirmed" [ngClass]="{'dark': darkTheme}">
+        <mat-card-header>
+            <mat-card-title>Confirmed</mat-card-title>
+            <mat-card-subtitle>{{overAllData.lastUpdate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>{{overAllData.confirmed.value | number:'1.0':'en-US'}}</mat-card-content>
+        <p>Number of confirmed cases of COVID-19</p>
+    </mat-card>
+
+    <mat-card class="recovered" [ngClass]="{'dark': darkTheme}">
+        <mat-card-header>
+            <mat-card-title>Recovered</mat-card-title>
+            <mat-card-subtitle>{{overAllData.lastUpdate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>{{overAllData.recovered.value | number:'1.0':'en-US'}}</mat-card-content>
+        <p>Number of recovered cases of COVID-19</p>
+    </mat-card>
+
+    <mat-card class="last-card deaths" [ngClass]="{'dark': darkTheme}">
+        <mat-card-header>
+            <mat-card-title>Deaths</mat-card-title>
+            <mat-card-subtitle>{{overAllData.lastUpdate}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>{{overAllData.deaths.value | number:'1.0':'en-US'}}</mat-card-content>
+        <p>Number of deaths caused by COVID-19</p>
+    </mat-card>
+</div>

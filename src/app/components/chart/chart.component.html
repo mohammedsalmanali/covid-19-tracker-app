@@ -1,0 +1,20 @@
+<div *ngIf="dataSource?.confirmed.value">
+    <canvas baseChart width="700" height="400" *ngIf="chartType == 'bar' && selectedCountry !== 'Global && barChartReady'"
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [legend]="barChartLegend"
+    [chartType]="barChartType"
+    [plugins]="barChartPlugins">
+    </canvas>
+
+    <canvas baseChart width="700" height="400" *ngIf="chartType == 'line' && selectedCountry == 'Global' && lineChartReady"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [legend]="lineChartLegend"
+        [colors]="lineChartColors"
+        [chartType]="lineChartType"
+        [plugins]="lineChartPlugins">
+    </canvas>
+</div>

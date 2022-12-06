@@ -1,0 +1,101 @@
+.container {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff; //light
+    overflow-y: hidden;
+    min-height: 100vh;
+    transition: all 0.5s linear 0s;
+}
+.title {
+    color: whitesmoke;
+    background: #00051b;
+    width: 100%;
+    height: 15vh;
+}
+
+.dark {
+    background: #1e1e1e; // dark
+    transition: all 0.5s linear 0s;
+    mat-slide-toggle {
+        color: whitesmoke;
+    }
+}
+
+mat-slide-toggle {
+    margin: 4%
+}
+
+::ng-deep .mat-slide-toggle-bar {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.loading {
+    height: 100vh;
+}
+
+.footer {
+    padding: 2%;
+    font-size: 15px;
+    transition: all 0.5s linear 0s;
+    span {
+        font-size:150%;
+        color:red;
+    }
+}
+
+.dark-footer {
+    color: whitesmoke;
+    transition: all 0.5s linear 0s;
+}
+
+.github-corner:hover .octo-arm { 
+    animation:octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0%, 100% {
+        transform:rotate(0)
+    }
+    20%, 60% {
+        transform:rotate(-25deg)
+    }
+    40%, 80% {
+        transform:rotate(10deg)
+    }
+}
+
+svg {
+    fill:#64CEAA;
+    color:#fff;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+    transition: all 0.5s linear 0s;
+}
+.dark-svg {
+    svg {
+        fill: rgba(105,240,174,.54);
+        color: #1e1e1e;
+        transition: all 0.5s linear 0s;
+    }
+}
+
+@media (max-width:520px) {
+    .github-corner:hover .octo-arm {
+        animation:none
+    }
+    .github-corner .octo-arm {
+        animation:octocat-wave 560ms ease-in-out
+    }
+    .container {
+        align-items: center;
+        margin: 0px;
+    }
+    mat-slide-toggle {
+        margin: 10%
+    }
+}

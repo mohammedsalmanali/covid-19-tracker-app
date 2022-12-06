@@ -1,0 +1,66 @@
+.card-container {
+    display: flex;
+    mat-card {
+        background: #eee9f1; //light
+        color: #424242;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s linear 0s;
+        mat-card-header {
+            font-size: 15px;
+            mat-card-title {
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            mat-card-subtitle {
+                color: #626262
+            }
+        }
+        mat-card-content {
+            font-size: 25px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .last-card {
+        margin-right: 15px;
+    }
+    ::ng-deep .mat-card-header-text {
+        margin: 0px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .confirmed {
+        border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+    }
+    .recovered {
+        border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+    }
+    .deaths {
+        border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+    }
+    .dark {
+        background: #232223; //dark
+        color: #a2a2a2;//dark
+        transition: all 0.5s linear 0s;
+    }
+}
+
+@media (max-width:520px) { 
+    .card-container {
+        flex-direction: column;
+        mat-card {
+            margin: 0 0 15px 0;
+        }
+        .last-card {
+            margin-right: 0;
+        }
+    }
+    
+}
