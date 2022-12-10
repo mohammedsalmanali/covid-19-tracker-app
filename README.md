@@ -26,7 +26,6 @@ Live Demo: https://github.com/mohammedsalmanali/covid-19-tracker-app
 **With Dark Theme enabled**
 
 ![image](https://user-images.githubusercontent.com/36665975/101586481-08fed580-3a08-11eb-9bdd-f833829d4d05.png)
-![image](https://user-images.githubusercontent.com/36665975/101586506-14520100-3a08-11eb-9696-b4ca1b0379e5.png)
 
 
 
