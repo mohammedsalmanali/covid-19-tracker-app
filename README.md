@@ -21,7 +21,6 @@ Live Demo: https://github.com/mohammedsalmanali/covid-19-tracker-app
 ### Mobile View
 
 ![image](https://user-images.githubusercontent.com/36665975/99064210-a31b5b80-25cb-11eb-844a-7e83244f50e0.png)
-![image](https://user-images.githubusercontent.com/36665975/99064233-add5f080-25cb-11eb-8f2f-63f5418114cb.png)
 
 
 
