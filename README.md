@@ -1,3 +1,5 @@
+⛔ The api used earlier is not available, so the app won't be working for a while till a new api service is integrated⛔
+
 # CovidTracker
 
 An application that tracks the status of coronavirus all over the world - using Angular, Material UI, ng2-charts and chart.js and deployed in Firebase app.
